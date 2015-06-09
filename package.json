@@ -1,0 +1,29 @@
+{
+  "name": "jspm-es6-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for ES6+ apps using JSPM + Babel",
+  "main": "dist/index.html",
+  "author": {
+    "name": "Alex Weber",
+    "email": "alexweber15@gmail.com",
+    "url": "http://alexweber.com.br"
+  },
+  "readmeFilename": "README.md",
+  "license": {
+    "type": "Unlicense",
+    "url": "http://unlicense.org/"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "docs": "jsdoc -c ./jsdoc.conf.json -R README.md"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "require-dir": "^0.3.0"
+  }
+}
