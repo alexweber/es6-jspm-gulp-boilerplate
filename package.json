@@ -15,7 +15,9 @@
   },
   "directories": {
     "doc": "docs",
-    "test": "test"
+    "test": "test",
+    "baseURL": "src",
+    "packages": "src/lib"
   },
   "scripts": {
     "test": "gulp test",
@@ -27,5 +29,18 @@
     "jaguarjs-jsdoc": "git+https://github.com/davidshimjs/jaguarjs-jsdoc.git",
     "jsdoc": "^3.3.0",
     "require-dir": "^0.3.0"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src",
+      "doc": "docs",
+      "packages": "src/lib",
+      "test": "test"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
   }
 }
