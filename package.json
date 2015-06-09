@@ -25,7 +25,10 @@
   },
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
     "gulp-connect": "^2.2.0",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2",
     "jaguarjs-jsdoc": "git+https://github.com/davidshimjs/jaguarjs-jsdoc.git",
     "jsdoc": "^3.3.0",
     "require-dir": "^0.3.0"
