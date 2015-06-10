@@ -4,7 +4,7 @@ var connect = require('gulp-connect');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 
-// SASS livereload.
+// Compile SASS with sourcemaps + livereload.
 gulp.task('sass', function() {
   gulp.src(paths.sass)
     .pipe(sourcemaps.init())
