@@ -1,7 +1,6 @@
 - [ ] Image tasks
 - [ ] Sample tests
 - [ ] Test task
-- [ ] Dist task
+- [ ] Use gulp-cached for other tasks?
 - [ ] Libs location?
 - [ ] Compiled css location?
-- [ ] Use gulp-cached for other tasks?
