@@ -1,0 +1,7 @@
+- [ ] Image tasks
+- [ ] Sample tests
+- [ ] Test task
+- [ ] Dist task
+- [ ] Libs location?
+- [ ] Compiled css location?
+- [ ] Use gulp-cached for other tasks?
