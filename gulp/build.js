@@ -6,8 +6,10 @@ var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var exec = require('child_process').execSync;
+var imagemin = require('gulp-imagemin');
 var minifyCss = require('gulp-minify-css');
 var minifyHtml = require('gulp-minify-html');
+var pngquant = require('imagemin-pngquant');
 var rename = require('gulp-rename');
 var replace = require('gulp-replace');
 var runSeq = require('run-sequence');
@@ -57,6 +59,11 @@ gulp.task('buildhtml', function () {
 
 // Build images for distribution.
 gulp.task('buildimg', function () {
-  gulp.src(paths.img)
+  gulp.src('./src/img')
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngquant()]
+    }))
     .pipe(gulp.dest('./dist/img'));
 });

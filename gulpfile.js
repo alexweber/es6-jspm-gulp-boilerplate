@@ -6,7 +6,7 @@ global.paths = {
   'html': './src/*.html',
   'js': './src/js/**/*.js',
   'sass': './src/scss/**/*.scss',
-  'img': './src/img'
+  'img': './src/img/*'
 };
 
 // Require all tasks in gulp/tasks.
