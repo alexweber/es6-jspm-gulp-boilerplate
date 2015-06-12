@@ -1,3 +1,7 @@
+'use strict';
+
+/*global paths*/
+
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var connect = require('gulp-connect');

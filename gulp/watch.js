@@ -1,3 +1,7 @@
+'use strict';
+
+/*global paths*/
+
 var gulp = require('gulp');
 var path = require('path');
 var util = require('gulp-util');

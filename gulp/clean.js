@@ -1,3 +1,7 @@
+'use strict';
+
+/*global paths*/
+
 var gulp = require('gulp');
 var del = require('del');
 
