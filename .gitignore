@@ -1,5 +1,5 @@
 # Debug.
-npm_debug.log
+npm-debug.log
 
 # External libraries.
 node_modules/
