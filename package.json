@@ -22,6 +22,7 @@
   "scripts": {
     "test": "gulp test",
     "docs": "jsdoc -c ./jsdoc.conf.json -R README.md"
+    "sassdocs": "sassdoc src/scss"
   },
   "devDependencies": {
     "del": "^1.2.0",
@@ -34,7 +35,8 @@
     "gulp-util": "^3.0.5",
     "jaguarjs-jsdoc": "git+https://github.com/davidshimjs/jaguarjs-jsdoc.git",
     "jsdoc": "^3.3.0",
-    "require-dir": "^0.3.0"
+    "require-dir": "^0.3.0",
+    "sassdoc": "^2.1.15"
   },
   "jspm": {
     "directories": {
