@@ -21,7 +21,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "buildjs": "jspm bundle js/app dist/app.min.js --minify --skip-source-maps",
+    "buildjs": "jspm bundle-sfx js/app dist/app.min.js --minify --skip-source-maps",
     "docs": "npm run sassdocs && npm run jsdocs",
     "jsdocs": "esdoc -c .esdoc.json",
     "sassdocs": "sassdoc src/scss"
