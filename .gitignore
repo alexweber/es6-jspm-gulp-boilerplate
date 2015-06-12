@@ -7,3 +7,7 @@ src/lib/
 
 # Compiled css.
 src/css/
+
+# Temporarily ignore.
+dist/
+docs/
