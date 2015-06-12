@@ -48,6 +48,9 @@ gulp.task('buildjs', function () {
 gulp.task('buildhtml', function () {
   gulp.src(paths.html)
     .pipe(replace('/css/app.css', 'app.min.css'))
-    // .pipe(minifyHtml())
+    .pipe(replace('config.js', 'app.min.js'))
+    .pipe(replace('<script src="lib/system.js"></script>', ''))
+    .pipe(replace("<script>System.import('./js/app')</script>", ''))
+    .pipe(minifyHtml())
     .pipe(gulp.dest('./dist'));
 });
