@@ -30,9 +30,9 @@ module.exports = function(config) {
       packages: 'src/lib'
     },
 
-    // proxies: {
-      // '/base/lib/': '/base/src/lib/'
-    // },
+    proxies: {
+      '/base/lib/': '/base/src/lib/'
+    },
 
     // list of files to exclude
     exclude: [
@@ -48,7 +48,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['mocha'],
+    reporters: ['progress', 'mocha'],
 
 
     // web server port
