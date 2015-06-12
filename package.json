@@ -21,7 +21,8 @@
   },
   "scripts": {
     "test": "gulp test",
-    "docs": "jsdoc -c ./jsdoc.conf.json -R README.md"
+    "docs": "npm run sassdocs && npm run jsdocs",
+    "jsdocs": "jsdoc -c ./jsdoc.conf.json -R README.md",
     "sassdocs": "sassdoc src/scss"
   },
   "devDependencies": {
