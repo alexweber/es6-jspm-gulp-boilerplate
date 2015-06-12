@@ -3,6 +3,14 @@
 /*global paths*/
 
 var gulp = require('gulp');
+var eslint = require('gulp-eslint');
 
-// @TODO
-https://github.com/GoodBoyDigital/pixi.js/blob/master/gulp/tasks/jshint.js
+gulp.task('lintjs', function () {
+  return gulp.src(paths.js)
+    .pipe(eslint())
+    .pipe(eslint.format());
+});
+
+gulp.task('lintsass', function () {
+
+});

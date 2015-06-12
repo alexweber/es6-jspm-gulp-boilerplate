@@ -1,0 +1,18 @@
+{
+  "extends": "eslint-config-standard",
+
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": false
+  },
+
+  "globals": {
+    "document": true,
+    "window": true
+  },
+
+  "rules": {
+    "semi": [2, "always"]
+  }
+}
