@@ -3,11 +3,11 @@
 /*global paths*/
 
 var gulp = require('gulp');
+var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var connect = require('gulp-connect');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('gulp-autoprefixer');
 
 var sassOptions = {
   errLogToConsole: true,
