@@ -9,6 +9,7 @@ var exec = require('child_process').execSync;
 var minifyCss = require('gulp-minify-css');
 var minifyHtml = require('gulp-minify-html');
 var rename = require('gulp-rename');
+var replace = require('gulp-replace');
 var runSeq = require('run-sequence');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
@@ -45,8 +46,8 @@ gulp.task('buildjs', function () {
 
 // Build HTML for distribution.
 gulp.task('buildhtml', function () {
-  // @TODO inject dependencies?
   gulp.src(paths.html)
-    .pipe(minifyHtml())
+    .pipe(replace('/css/app.css', 'app.min.css'))
+    // .pipe(minifyHtml())
     .pipe(gulp.dest('./dist'));
 });
