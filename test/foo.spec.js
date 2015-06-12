@@ -1,15 +1,15 @@
-import Foo from '../src/js/foo.js';
-
-let expect = require('chai').expect;
-
 describe('ES6 Foo', function () {
-    let foo;
+    var foo;
 
-    beforeEach(() => {
-        foo = new Foo();
+    beforeEach(function() {
+      foo = new Foo();
     });
 
-    it('should return "Do Something" when calling doSomething', () => {
-        expect(foo.doSomething()).to.equal('Do Something');
+    afterEach(function() {
+
+    });
+
+    it('should return "Do Something" when calling doSomething', function() {
+      expect(foo.doSomething()).toEqual('Do Something');
     });
 });

@@ -18,10 +18,10 @@ module.exports = function(config) {
 
     // configuration for karma-jspm
     jspm: {
-      useBundles: true,
+      // useBundles: true,
       loadFiles: ['test/**/*.spec.js'],
-      serveFiles: ['js/**/*.js'],
-      packages: 'lib'
+      serveFiles: ['src/js/**/*.js'],
+      packages: 'src/lib'
     },
 
     // proxies: {
