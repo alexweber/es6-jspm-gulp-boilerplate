@@ -16,7 +16,7 @@ var uglify = require('gulp-uglify');
 
 // One build task to rule them all.
 gulp.task('build', function (done) {
-  runSeq('clean', ['buildsass', 'buildjs'], 'buildhtml', done);
+  runSeq('clean', ['buildsass', 'buildimg', 'buildjs'], 'buildhtml', done);
 });
 
 // Build SASS for distribution.
@@ -53,4 +53,10 @@ gulp.task('buildhtml', function () {
     .pipe(replace("<script>System.import('./js/app')</script>", ''))
     .pipe(minifyHtml())
     .pipe(gulp.dest('./dist'));
+});
+
+// Build images for distribution.
+gulp.task('buildimg', function () {
+  gulp.src(paths.img)
+    .pipe(gulp.dest('./dist/img'));
 });
