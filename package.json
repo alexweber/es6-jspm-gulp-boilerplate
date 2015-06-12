@@ -28,6 +28,7 @@
     "sassdocs": "sassdoc src/scss"
   },
   "devDependencies": {
+    "chai": "^3.0.0",
     "del": "^1.2.0",
     "esdoc": "^0.1.2",
     "eslint": "^0.22.1",
@@ -49,6 +50,11 @@
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.5",
     "imagemin-pngquant": "^4.1.0",
+    "karma": "^0.12.36",
+    "karma-chai": "^0.1.0",
+    "karma-jspm": "^1.1.5",
+    "karma-mocha": "^0.1.10",
+    "mocha": "^2.2.5",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.0",
     "sassdoc": "^2.1.15"
