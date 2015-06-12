@@ -4,7 +4,6 @@
 
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
-var Builder = require('systemjs-builder');
 var concat = require('gulp-concat');
 var minifyCss = require('gulp-minify-css');
 var minifyHtml = require('gulp-minify-html');
@@ -33,25 +32,10 @@ gulp.task('buildsass', function () {
 
 // Build JS for distribution.
 gulp.task('buildjs', function () {
-  var buildOptions = {
-    minify: true,
-    sourceMaps: false
-  };
-
-  var builder = new Builder();
-  builder.reset();
-  builder.loadConfig('./src/config.js').then(function() {
-    builder.loader.baseURL = path.resolve('./src/');
-
-    return builder.build('js/app', 'alex.js', buildOptions)
-      .then(function() {
-        console.log('Build complete!');
-      })
-      .catch(function(err) {
-        console.log('Build error.');
-        console.log(err);
-      });
-  });
+  // @TODO figure out how to bundle jspm
+  gulp.src(paths.js)
+    .pipe(uglify())
+    .pipe(gulp.dest('./dist'));
 });
 
 // Build HTML for distribution.
