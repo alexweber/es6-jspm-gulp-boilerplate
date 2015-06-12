@@ -7,6 +7,8 @@ var concat = require('gulp-concat');
 var connect = require('gulp-connect');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
+
 var sassOptions = {
   errLogToConsole: true,
   outputStyle: 'expanded'
@@ -19,6 +21,7 @@ gulp.task('sass', function() {
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(concat('app.css'))
     .pipe(sourcemaps.write('.'))
+    .pipe(autoprefixer())
     .pipe(gulp.dest('./src/css'))
     .pipe(connect.reload());
 });
