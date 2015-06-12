@@ -5,6 +5,7 @@
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
+var exec = require('child_process').execSync;
 var minifyCss = require('gulp-minify-css');
 var minifyHtml = require('gulp-minify-html');
 var rename = require('gulp-rename');
@@ -32,10 +33,14 @@ gulp.task('buildsass', function () {
 
 // Build JS for distribution.
 gulp.task('buildjs', function () {
-  // @TODO figure out how to bundle jspm
-  gulp.src(paths.js)
-    .pipe(uglify())
-    .pipe(gulp.dest('./dist'));
+  exec('npm run buildjs', function (err, stdout, stderr) {
+    if (err) {
+      throw err;
+    }
+    else {
+      console.log('Build complete!');
+    }
+  });
 });
 
 // Build HTML for distribution.
