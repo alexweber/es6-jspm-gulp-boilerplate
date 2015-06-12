@@ -20,7 +20,7 @@
     "packages": "src/lib"
   },
   "scripts": {
-    "test": "gulp test",
+    "test": "karma start",
     "build": "gulp build",
     "docs": "npm run sassdocs && npm run jsdocs",
     "buildjs": "jspm bundle-sfx js/app dist/app.min.js --minify --skip-source-maps",
