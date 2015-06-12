@@ -1,3 +1,3 @@
-# Trading Card Game
+# ES6 + JSPM + Gulp
 
 > Hello! :)
