@@ -1,11 +1,9 @@
 'use strict';
 
-/*global paths*/
-
 var gulp = require('gulp');
 var del = require('del');
 
-// Clean build dir.
+// Empty the build dir.
 gulp.task('clean', function (done) {
-  del(['./dist'], done);
+  del([global.paths.dist + '/*'], done);
 });

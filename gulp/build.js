@@ -1,7 +1,5 @@
 'use strict';
 
-/*global paths*/
-
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
@@ -23,7 +21,7 @@ gulp.task('build', function (done) {
 
 // Build SASS for distribution.
 gulp.task('buildsass', function () {
-  gulp.src(paths.sass)
+  gulp.src(global.paths.sass)
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('app.css'))
     .pipe(autoprefixer())
@@ -31,7 +29,7 @@ gulp.task('buildsass', function () {
   	.pipe(rename({
   		suffix: '.min'
   	}))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest(global.paths.dist));
 });
 
 // Build JS for distribution.
@@ -48,22 +46,22 @@ gulp.task('buildjs', function () {
 
 // Build HTML for distribution.
 gulp.task('buildhtml', function () {
-  gulp.src(paths.html)
+  gulp.src(global.paths.html)
     .pipe(replace('css/app.css', 'app.min.css'))
     .pipe(replace('lib/system.js', 'app.min.js'))
     .pipe(replace('<script src="config.js"></script>', ''))
     .pipe(replace("<script>System.import('./js/app')</script>", ''))
     .pipe(minifyHtml())
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest(global.paths.dist));
 });
 
 // Build images for distribution.
 gulp.task('buildimg', function () {
-  gulp.src('./src/img')
+  gulp.src(global.paths.img)
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()]
     }))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest(global.paths.dist + '/img'));
 });

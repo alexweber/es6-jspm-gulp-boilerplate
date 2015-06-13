@@ -1,12 +1,10 @@
 'use strict';
 
-/*global paths*/
-
 var gulp = require('gulp');
 var connect = require('gulp-connect');
 
 // HTML livereload.
 gulp.task('html', function() {
-  gulp.src(paths.html)
+  gulp.src(global.paths.html)
     .pipe(connect.reload());
 });

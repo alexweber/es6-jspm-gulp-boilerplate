@@ -1,7 +1,5 @@
 'use strict';
 
-/*global paths*/
-
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
@@ -16,12 +14,12 @@ var sassOptions = {
 
 // Compile SASS with sourcemaps + livereload.
 gulp.task('sass', function() {
-  gulp.src(paths.sass)
+  gulp.src(global.paths.sass)
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(concat('app.css'))
     .pipe(sourcemaps.write('.'))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('./src/css'))
+    .pipe(gulp.dest(global.paths.css))
     .pipe(connect.reload());
 });

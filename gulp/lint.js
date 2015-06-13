@@ -1,7 +1,5 @@
 'use strict';
 
-/*global paths*/
-
 var gulp = require('gulp');
 var cache = require('gulp-cached');
 var eslint = require('gulp-eslint');
@@ -9,7 +7,7 @@ var scsslint = require('gulp-scss-lint');
 
 // Lint JS.
 gulp.task('lintjs', function () {
-  return gulp.src(paths.js)
+  return gulp.src(global.paths.js)
     .pipe(cache('lintjs'))
     .pipe(eslint())
     .pipe(eslint.format());
@@ -17,7 +15,7 @@ gulp.task('lintjs', function () {
 
 // Lint SASS.
 gulp.task('lintsass', function () {
-  return gulp.src(paths.sass)
+  return gulp.src(global.paths.sass)
     .pipe(cache('lintsass'))
     .pipe(scsslint());
 });
