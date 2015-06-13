@@ -18,8 +18,8 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(concat('app.css'))
-    .pipe(sourcemaps.write('.'))
     .pipe(autoprefixer())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(global.paths.css))
     .pipe(connect.reload());
 });
