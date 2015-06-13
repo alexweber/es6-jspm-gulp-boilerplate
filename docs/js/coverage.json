@@ -1,0 +1,15 @@
+{
+  "coverage": "0%",
+  "expectCount": 3,
+  "actualCount": 0,
+  "files": {
+    "js/foo.js": {
+      "expectCount": 2,
+      "actualCount": 0
+    },
+    "js/app.js": {
+      "expectCount": 1,
+      "actualCount": 0
+    }
+  }
+}
