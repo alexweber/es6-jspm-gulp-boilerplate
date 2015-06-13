@@ -11,7 +11,8 @@
 - Uses JSPM instead of Bower to manage packages
 - Transpiles ES6+ automagically using [Babel](https://babeljs.io/) via JSPM
 - Uses [SystemJS](https://github.com/systemjs/systemjs) to load modules via JSPM
-- SASS compilation using [LibSass](http://libsass.org/)
+- SASS compilation using [LibSass](http://libsass.org/) and [Autoprefixer](https://github.com/postcss/autoprefixer)
+- Local dev server with [LiveReload](http://livereload.com/) using [Gulp Connect](https://github.com/avevlad/gulp-connect)
 - Testing using [Karma](http://karma-runner.github.io/) with [Mocha](http://mochajs.org/) + [Chai](http://chaijs.com/) (bonus: write your tests in ES6)
 - Linting with [ESLint](http://eslint.org/) and [SCSS-Lint](https://github.com/brigade/scss-lint)
 - Generates documentation automatically using [ESDoc](https://esdoc.org/) and [SassDoc](http://sassdoc.com/)
