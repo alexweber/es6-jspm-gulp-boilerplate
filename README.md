@@ -1,7 +1,5 @@
 # ES6 + JSPM + Gulp Boilerplate
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-
 > A boilerplate for developing ES6+ apps using JSPM & Gulp.
 
 ## JSPM
