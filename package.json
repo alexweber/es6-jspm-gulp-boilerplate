@@ -21,6 +21,7 @@
   },
   "scripts": {
     "test": "karma start",
+    "test:watch": "karma start --no-single-run",
     "build": "gulp build",
     "docs": "npm run sassdocs && npm run jsdocs",
     "start": "gulp",
