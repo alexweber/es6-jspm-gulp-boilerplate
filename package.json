@@ -9,10 +9,7 @@
     "url": "http://alexweber.com.br"
   },
   "readmeFilename": "README.md",
-  "license": {
-    "type": "Unlicense",
-    "url": "http://unlicense.org/"
-  },
+  "license": "Unlicense",
   "scripts": {
     "test": "karma start",
     "test:watch": "karma start --no-single-run",
