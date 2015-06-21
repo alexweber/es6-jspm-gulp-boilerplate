@@ -13,12 +13,6 @@
     "type": "Unlicense",
     "url": "http://unlicense.org/"
   },
-  "directories": {
-    "doc": "docs",
-    "test": "test",
-    "baseURL": "src",
-    "packages": "src/lib"
-  },
   "scripts": {
     "test": "karma start",
     "test:watch": "karma start --no-single-run",
@@ -28,6 +22,12 @@
     "buildjs": "jspm bundle-sfx js/app dist/app.min.js --minify --skip-source-maps",
     "jsdocs": "esdoc -c .esdoc.json",
     "sassdocs": "sassdoc src/scss"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test",
+    "baseURL": "src",
+    "packages": "src/lib"
   },
   "devDependencies": {
     "chai": "^3.0.0",
