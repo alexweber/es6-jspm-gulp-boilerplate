@@ -1,5 +1,4 @@
 // Karma configuration
-// Generated on Fri Jun 12 2015 14:21:36 GMT-0300 (BRT)
 
 module.exports = function(config) {
   config.set({
@@ -11,10 +10,10 @@ module.exports = function(config) {
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: [
-      'chai-as-promised',
-      'sinon-chai',
+      'jspm',
       'mocha',
-      'jspm'
+      'chai-as-promised',
+      'sinon-chai'
     ],
 
 
