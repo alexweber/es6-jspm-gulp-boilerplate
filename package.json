@@ -23,6 +23,12 @@
     "jsdocs": "esdoc -c .esdoc.json",
     "sassdocs": "sassdoc src/scss"
   },
+  "keywords": [
+    "es6",
+    "jspm",
+    "gulp",
+    "babel",
+  ],
   "directories": {
     "doc": "docs",
     "test": "test",
