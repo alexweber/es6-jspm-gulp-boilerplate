@@ -1,6 +1,6 @@
 {
   "name": "es6-jspm-gulp-boilerplate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Boilerplate for ES6+ apps using JSPM + Babel",
   "main": "dist/index.html",
   "author": {
