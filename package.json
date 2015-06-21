@@ -28,6 +28,7 @@
     "jspm",
     "gulp",
     "babel",
+    "systemjs"
   ],
   "directories": {
     "doc": "docs",
