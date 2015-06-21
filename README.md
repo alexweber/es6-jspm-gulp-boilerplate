@@ -30,6 +30,8 @@
 
 Run `karma start` or `npm test` to run tests.
 
+Run `npm run test:watch` to run tests continuously.
+
 ## Generating documentation
 
 Run `npm run docs` to generate documentation for your JavaScript and SASS automatically in the `docs` folder.
