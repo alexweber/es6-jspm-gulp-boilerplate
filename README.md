@@ -20,7 +20,7 @@
 
 ## Usage
 
-1. Install via npm: `npm install es6-jspm-gulp-boilerplate` or clone this repo from `https://github.com/alexweber/es6-jspm-gulp-boilerplate.git`
+1. Clone this repo from `https://github.com/alexweber/es6-jspm-gulp-boilerplate.git` or install from npm `npm install es6-jspm-gulp-boilerplate`
 2. Install Gulp globally: `npm install -g gulp`
 3. Run `gulp install` in the root directory to install npm & jspm dependencies automatically or do it yourself by running `npm install` and then `jspm install` in the root directory
 4. Run `gulp` or `npm start` to start the local dev server
