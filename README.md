@@ -28,7 +28,7 @@
 
 ## Testing
 
-Run `karma start` or `npm test` to run tests.
+Run `karma start` or `npm test` to run tests once.
 
 Run `npm run test:watch` to run tests continuously.
 
