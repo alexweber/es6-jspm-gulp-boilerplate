@@ -31,17 +31,17 @@
               "type": "Identifier",
               "name": "doSomething",
               "range": [
-                17,
-                28
+                15,
+                26
               ],
               "loc": {
                 "start": {
                   "line": 3,
-                  "column": 4
+                  "column": 2
                 },
                 "end": {
                   "line": 3,
-                  "column": 15
+                  "column": 13
                 }
               }
             },
@@ -59,82 +59,82 @@
                       "value": "Do Something",
                       "raw": "'Do Something'",
                       "range": [
-                        48,
-                        62
+                        43,
+                        57
                       ],
                       "loc": {
                         "start": {
                           "line": 4,
-                          "column": 15
+                          "column": 11
                         },
                         "end": {
                           "line": 4,
-                          "column": 29
+                          "column": 25
                         }
                       }
                     },
                     "range": [
-                      41,
-                      63
+                      36,
+                      58
                     ],
                     "loc": {
                       "start": {
                         "line": 4,
-                        "column": 8
+                        "column": 4
                       },
                       "end": {
                         "line": 4,
-                        "column": 30
+                        "column": 26
                       }
                     }
                   }
                 ],
                 "range": [
-                  31,
-                  69
+                  30,
+                  62
                 ],
                 "loc": {
                   "start": {
                     "line": 3,
-                    "column": 18
+                    "column": 17
                   },
                   "end": {
                     "line": 5,
-                    "column": 5
+                    "column": 3
                   }
                 }
               },
               "generator": false,
               "expression": false,
               "range": [
-                28,
-                69
+                27,
+                62
               ],
               "loc": {
                 "start": {
                   "line": 3,
-                  "column": 15
+                  "column": 14
                 },
                 "end": {
                   "line": 5,
-                  "column": 5
+                  "column": 3
                 }
               }
             },
             "kind": "method",
             "computed": false,
             "range": [
-              17,
-              69
+              15,
+              62
             ],
             "loc": {
               "start": {
                 "line": 3,
-                "column": 4
+                "column": 2
               },
               "end": {
                 "line": 5,
-                "column": 5
+                "column": 3
               }
             },
             "static": false
@@ -142,7 +142,7 @@
         ],
         "range": [
           10,
-          71
+          64
         ],
         "loc": {
           "start": {
@@ -157,7 +157,7 @@
       },
       "range": [
         0,
-        71
+        64
       ],
       "loc": {
         "start": {
@@ -168,7 +168,48 @@
           "line": 6,
           "column": 1
         }
-      }
+      },
+      "name": "_",
+      "leadingComments": [],
+      "trailingComments": []
+    },
+    {
+      "type": "Identifier",
+      "declaration": {
+        "type": "Identifier",
+        "name": "Foo",
+        "range": [
+          81,
+          84
+        ],
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 15
+          },
+          "end": {
+            "line": 8,
+            "column": 18
+          }
+        }
+      },
+      "range": [
+        66,
+        85
+      ],
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 19
+        }
+      },
+      "name": "_",
+      "leadingComments": [],
+      "trailingComments": []
     },
     {
       "type": "ExportDefaultDeclaration",
@@ -202,17 +243,17 @@
                 "type": "Identifier",
                 "name": "doSomething",
                 "range": [
-                  17,
-                  28
+                  15,
+                  26
                 ],
                 "loc": {
                   "start": {
                     "line": 3,
-                    "column": 4
+                    "column": 2
                   },
                   "end": {
                     "line": 3,
-                    "column": 15
+                    "column": 13
                   }
                 }
               },
@@ -230,82 +271,82 @@
                         "value": "Do Something",
                         "raw": "'Do Something'",
                         "range": [
-                          48,
-                          62
+                          43,
+                          57
                         ],
                         "loc": {
                           "start": {
                             "line": 4,
-                            "column": 15
+                            "column": 11
                           },
                           "end": {
                             "line": 4,
-                            "column": 29
+                            "column": 25
                           }
                         }
                       },
                       "range": [
-                        41,
-                        63
+                        36,
+                        58
                       ],
                       "loc": {
                         "start": {
                           "line": 4,
-                          "column": 8
+                          "column": 4
                         },
                         "end": {
                           "line": 4,
-                          "column": 30
+                          "column": 26
                         }
                       }
                     }
                   ],
                   "range": [
-                    31,
-                    69
+                    30,
+                    62
                   ],
                   "loc": {
                     "start": {
                       "line": 3,
-                      "column": 18
+                      "column": 17
                     },
                     "end": {
                       "line": 5,
-                      "column": 5
+                      "column": 3
                     }
                   }
                 },
                 "generator": false,
                 "expression": false,
                 "range": [
-                  28,
-                  69
+                  27,
+                  62
                 ],
                 "loc": {
                   "start": {
                     "line": 3,
-                    "column": 15
+                    "column": 14
                   },
                   "end": {
                     "line": 5,
-                    "column": 5
+                    "column": 3
                   }
                 }
               },
               "kind": "method",
               "computed": false,
               "range": [
-                17,
-                69
+                15,
+                62
               ],
               "loc": {
                 "start": {
                   "line": 3,
-                  "column": 4
+                  "column": 2
                 },
                 "end": {
                   "line": 5,
-                  "column": 5
+                  "column": 3
                 }
               },
               "static": false
@@ -313,7 +354,7 @@
           ],
           "range": [
             10,
-            71
+            64
           ],
           "loc": {
             "start": {
@@ -328,7 +369,7 @@
         },
         "range": [
           0,
-          71
+          64
         ],
         "loc": {
           "start": {
@@ -340,12 +381,63 @@
             "column": 1
           }
         },
+        "__esdoc__pseudo_export": false,
         "leadingComments": [],
         "trailingComments": []
       },
       "range": [
-        73,
-        92
+        66,
+        85
+      ],
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 19
+        }
+      },
+      "leadingComments": null
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "VariableDeclaration",
+        "kind": "let",
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 0
+          },
+          "end": {
+            "line": 8,
+            "column": 19
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "foo"
+            },
+            "init": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "Foo"
+              }
+            }
+          }
+        ],
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      "range": [
+        66,
+        85
       ],
       "loc": {
         "start": {
@@ -362,7 +454,7 @@
   "sourceType": "module",
   "range": [
     0,
-    92
+    85
   ],
   "loc": {
     "start": {

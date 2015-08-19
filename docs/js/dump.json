@@ -9,7 +9,47 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import pixi from 'pixi.js';\nexport var hello = 'es6';\n"
+    "content": "import Foo from './foo';\n\nlet foo = new Foo();\n\nlet textNode = document.createTextNode(foo.doSomething());\ndocument.body.appendChild(textNode);\n\nexport var hello = 'es6';\n"
+  },
+  {
+    "kind": "variable",
+    "static": true,
+    "variation": null,
+    "name": "foo",
+    "memberof": "js/app.js",
+    "longname": "js/app.js~foo",
+    "access": null,
+    "export": false,
+    "importPath": "es6-jspm-gulp-boilerplate/js/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "js/foo~Foo"
+      ]
+    }
+  },
+  {
+    "kind": "variable",
+    "static": true,
+    "variation": null,
+    "name": "textNode",
+    "memberof": "js/app.js",
+    "longname": "js/app.js~textNode",
+    "access": null,
+    "export": false,
+    "importPath": "es6-jspm-gulp-boilerplate/js/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
   },
   {
     "kind": "variable",
@@ -23,7 +63,7 @@
     "importPath": "es6-jspm-gulp-boilerplate/js/app.js",
     "importStyle": "{hello}",
     "description": null,
-    "lineNumber": 2,
+    "lineNumber": 8,
     "undocument": true,
     "type": {
       "types": [
@@ -41,7 +81,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "class Foo {\n\n    doSomething() {\n        return 'Do Something';\n    }\n}\n\nexport default Foo;\n"
+    "content": "class Foo {\n\n  doSomething () {\n    return 'Do Something';\n  }\n}\n\nexport default Foo;\n"
   },
   {
     "kind": "class",
@@ -77,6 +117,26 @@
       ]
     },
     "generator": false
+  },
+  {
+    "kind": "variable",
+    "static": true,
+    "variation": null,
+    "name": "foo",
+    "memberof": "js/foo.js",
+    "longname": "js/foo.js~foo",
+    "access": null,
+    "export": true,
+    "importPath": "es6-jspm-gulp-boilerplate/js/foo.js",
+    "importStyle": "foo",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "js/foo.js~Foo"
+      ]
+    }
   },
   {
     "kind": "external",
