@@ -1,8 +1,8 @@
 class Foo {
 
-    doSomething() {
-        return 'Do Something';
-    }
+  doSomething () {
+    return 'Do Something';
+  }
 }
 
 export default Foo;
