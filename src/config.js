@@ -1,18 +1,20 @@
 System.config({
-  baseURL: "/",
-  defaultJSExtensions: true,
-  transpiler: "babel",
-  babelOptions: {
+  "baseURL": "/",
+  "transpiler": "babel",
+  "babelOptions": {
     "optional": [
       "runtime"
     ]
   },
-  paths: {
-    "github:*": "lib/github/*",
-    "npm:*": "lib/npm/*"
-  },
+  "paths": {
+    "*": "*.js",
+    "github:*": "lib/github/*.js",
+    "npm:*": "lib/npm/*.js"
+  }
+});
 
-  map: {
+System.config({
+  "map": {
     "babel": "npm:babel-core@5.5.6",
     "babel-runtime": "npm:babel-runtime@5.5.6",
     "core-js": "npm:core-js@0.9.15",
@@ -256,3 +258,4 @@ System.config({
     }
   }
 });
+
