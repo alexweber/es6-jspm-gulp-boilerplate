@@ -30,6 +30,7 @@
     "es6",
     "jspm",
     "gulp",
+    "boilerplate",
     "babel",
     "systemjs"
   ],
