@@ -24,7 +24,10 @@ module.exports = function(config) {
     jspm: {
       useBundles: true,
       config: 'src/config.js',
-      loadFiles: ['test/**/*.js'],
+      loadFiles: [
+        'node_modules/phantomjs-polyfill/bind-polyfill.js', // necessary for PhantomJS (doesn't have Function.bind)
+        'test/**/*.js'
+      ],
       serveFiles: ['src/js/**/*.js'],
       packages: 'src/lib'
     },
@@ -70,7 +73,7 @@ module.exports = function(config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: [
-      'Chrome'
+      'PhantomJS'
     ],
 
 
