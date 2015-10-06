@@ -10,3 +10,6 @@ npm-debug.log
 # External libraries.
 node_modules/
 src/lib/
+
+# Generated docs.
+docs
