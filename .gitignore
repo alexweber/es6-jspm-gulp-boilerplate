@@ -1,9 +1,12 @@
+# Compiled app
+dist
+
+# Compiled css.
+src/css/
+
 # Debug.
 npm-debug.log
 
 # External libraries.
 node_modules/
 src/lib/
-
-# Compiled css.
-src/css/
