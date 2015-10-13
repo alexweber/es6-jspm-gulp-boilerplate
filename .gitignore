@@ -1,3 +1,9 @@
+# Compiled app
+dist
+
+# Compiled css.
+src/css/
+
 # Debug.
 npm-debug.log
 
@@ -5,5 +11,5 @@ npm-debug.log
 node_modules/
 src/lib/
 
-# Compiled css.
-src/css/
+# Generated docs.
+docs
