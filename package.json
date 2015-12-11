@@ -69,7 +69,7 @@
     "karma-chai": "^0.1.0",
     "karma-chai-as-promised": "^0.1.2",
     "karma-chrome-launcher": "^0.1.12",
-    "karma-jspm": "^1.1.5",
+    "karma-jspm": "^2.0.2",
     "karma-mocha": "^0.1.10",
     "karma-mocha-reporter": "^1.0.2",
     "karma-sinon-chai": "^1.0.0",
