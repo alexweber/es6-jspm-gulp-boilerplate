@@ -3,7 +3,7 @@
 var gulp = require('gulp'),
   cache = require('gulp-cached'),
   eslint = require('gulp-eslint'),
-  scsslint = require('gulp-scss-lint');
+  sassLint = require('gulp-sass-lint');
 
 // Lint JS.
 gulp.task('lintjs', function () {
@@ -17,7 +17,8 @@ gulp.task('lintjs', function () {
 gulp.task('lintsass', function () {
   return gulp.src(global.paths.sass)
     .pipe(cache('lintsass'))
-    .pipe(scsslint());
+    .pipe(sassLint())
+    .pipe(sassLint.format());
 });
 
 // Lint all the things!
