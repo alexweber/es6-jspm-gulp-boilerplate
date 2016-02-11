@@ -1,9 +1,9 @@
 'use strict';
 
-var gulp = require('gulp');
-var cache = require('gulp-cached');
-var eslint = require('gulp-eslint');
-var scsslint = require('gulp-scss-lint');
+var gulp = require('gulp'),
+  cache = require('gulp-cached'),
+  eslint = require('gulp-eslint'),
+  scsslint = require('gulp-scss-lint');
 
 // Lint JS.
 gulp.task('lintjs', function () {

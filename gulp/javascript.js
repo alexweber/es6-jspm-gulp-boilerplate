@@ -1,10 +1,10 @@
 'use strict';
 
-var gulp = require('gulp');
-var connect = require('gulp-connect');
+var gulp = require('gulp'),
+  connect = require('gulp-connect');
 
 // JavaScript livereload.
-gulp.task('js', function() {
+gulp.task('js', function () {
   gulp.src(global.paths.js)
     .pipe(connect.reload());
 });

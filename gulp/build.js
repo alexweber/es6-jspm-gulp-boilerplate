@@ -1,18 +1,18 @@
 'use strict';
 
-var gulp = require('gulp');
-var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
-var exec = require('child_process').execSync;
-var imagemin = require('gulp-imagemin');
-var minifyCss = require('gulp-minify-css');
-var minifyHtml = require('gulp-minify-html');
-var pngquant = require('imagemin-pngquant');
-var rename = require('gulp-rename');
-var replace = require('gulp-replace');
-var runSeq = require('run-sequence');
-var sass = require('gulp-sass');
-var uglify = require('gulp-uglify');
+var gulp = require('gulp'),
+  autoprefixer = require('gulp-autoprefixer'),
+  concat = require('gulp-concat'),
+  exec = require('child_process').execSync,
+  imagemin = require('gulp-imagemin'),
+  minifyCss = require('gulp-minify-css'),
+  minifyHtml = require('gulp-minify-html'),
+  pngquant = require('imagemin-pngquant'),
+  rename = require('gulp-rename'),
+  replace = require('gulp-replace'),
+  runSeq = require('run-sequence'),
+  sass = require('gulp-sass'),
+  uglify = require('gulp-uglify');
 
 // One build task to rule them all.
 gulp.task('build', function (done) {
@@ -26,9 +26,9 @@ gulp.task('buildsass', function () {
     .pipe(concat('app.css'))
     .pipe(autoprefixer())
     .pipe(minifyCss())
-  	.pipe(rename({
-  		suffix: '.min'
-  	}))
+    .pipe(rename({
+      suffix: '.min'
+    }))
     .pipe(gulp.dest(global.paths.dist));
 });
 
