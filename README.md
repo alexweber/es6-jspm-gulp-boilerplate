@@ -1,4 +1,4 @@
-[![Dependency Status](https://david-dm.org/alexweber/es6-jspm-gulp-boilerplate.svg)](https://david-dm.org/alexweber/es6-jspm-gulp-boilerplate) [![devDependency Status](https://david-dm.org/alexweber/es6-jspm-gulp-boilerplate/dev-status.svg)](https://david-dm.org/alexweber/es6-jspm-gulp-boilerplate#info=devDependencies)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com) [![Dependency Status](https://david-dm.org/alexweber/es6-jspm-gulp-boilerplate.svg)](https://david-dm.org/alexweber/es6-jspm-gulp-boilerplate) [![devDependency Status](https://david-dm.org/alexweber/es6-jspm-gulp-boilerplate/dev-status.svg)](https://david-dm.org/alexweber/es6-jspm-gulp-boilerplate#info=devDependencies)
 # ES6 + JSPM + Gulp Boilerplate
 
 > A boilerplate for developing ES6+ apps using JSPM & Gulp.
