@@ -1,5 +1,6 @@
 [
   {
+    "__docId__": 0,
     "kind": "file",
     "static": true,
     "variation": null,
@@ -12,6 +13,7 @@
     "content": "import Foo from './foo';\n\nlet foo = new Foo();\n\nlet textNode = document.createTextNode(foo.doSomething());\ndocument.body.appendChild(textNode);\n\nexport var hello = 'es6';\n"
   },
   {
+    "__docId__": 1,
     "kind": "variable",
     "static": true,
     "variation": null,
@@ -27,11 +29,12 @@
     "undocument": true,
     "type": {
       "types": [
-        "js/foo~Foo"
+        "js/foo.js~Foo"
       ]
     }
   },
   {
+    "__docId__": 2,
     "kind": "variable",
     "static": true,
     "variation": null,
@@ -52,6 +55,7 @@
     }
   },
   {
+    "__docId__": 3,
     "kind": "variable",
     "static": true,
     "variation": null,
@@ -72,6 +76,7 @@
     }
   },
   {
+    "__docId__": 4,
     "kind": "file",
     "static": true,
     "variation": null,
@@ -84,6 +89,7 @@
     "content": "class Foo {\n\n  doSomething () {\n    return 'Do Something';\n  }\n}\n\nexport default Foo;\n"
   },
   {
+    "__docId__": 5,
     "kind": "class",
     "static": true,
     "variation": null,
@@ -100,6 +106,7 @@
     "interface": false
   },
   {
+    "__docId__": 6,
     "kind": "method",
     "static": false,
     "variation": null,
@@ -119,26 +126,7 @@
     "generator": false
   },
   {
-    "kind": "variable",
-    "static": true,
-    "variation": null,
-    "name": "foo",
-    "memberof": "js/foo.js",
-    "longname": "js/foo.js~foo",
-    "access": null,
-    "export": true,
-    "importPath": "es6-jspm-gulp-boilerplate/js/foo.js",
-    "importStyle": "foo",
-    "description": null,
-    "lineNumber": 8,
-    "undocument": true,
-    "type": {
-      "types": [
-        "js/foo.js~Foo"
-      ]
-    }
-  },
-  {
+    "__docId__": 8,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -151,6 +139,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 9,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -163,6 +152,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 10,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -175,6 +165,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 11,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -187,6 +178,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 12,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -199,6 +191,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 13,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -211,6 +204,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 14,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -223,6 +217,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 15,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -235,6 +230,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 16,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -247,6 +243,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 17,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -259,6 +256,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 18,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -271,6 +269,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 19,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -283,6 +282,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 20,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -295,6 +295,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 21,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -307,6 +308,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 22,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -319,6 +321,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 23,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -331,6 +334,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 24,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -343,6 +347,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 25,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -355,6 +360,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 26,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -367,6 +373,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 27,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -379,6 +386,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 28,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -391,6 +399,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 29,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -403,6 +412,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 30,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -415,6 +425,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 31,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -427,6 +438,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 32,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -439,6 +451,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 33,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -451,6 +464,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 34,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -463,6 +477,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 35,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -475,6 +490,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 36,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -487,6 +503,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 37,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -499,6 +516,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 38,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -511,6 +529,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 39,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -523,6 +542,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 40,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -535,6 +555,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 41,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -547,6 +568,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 42,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -559,6 +581,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 43,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -571,6 +594,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 44,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -583,6 +607,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 45,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -595,6 +620,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 46,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -607,6 +633,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 47,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -619,6 +646,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 48,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -631,6 +659,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 49,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -643,6 +672,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 50,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -655,6 +685,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 51,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -667,6 +698,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 52,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -679,6 +711,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 53,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -691,6 +724,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 54,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -703,6 +737,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 56,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -715,6 +750,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 57,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -727,6 +763,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 58,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -739,6 +776,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 59,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -751,6 +789,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 60,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -763,6 +802,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 61,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -775,6 +815,7 @@
     "builtinExternal": true
   },
   {
+    "__docId__": 62,
     "kind": "external",
     "static": true,
     "variation": null,
@@ -782,6 +823,19 @@
     "externalLink": "https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest",
     "memberof": "BuiltinExternal/WebAPIExternal.js",
     "longname": "BuiltinExternal/WebAPIExternal.js~XMLHttpRequest",
+    "access": null,
+    "description": null,
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "AudioContext",
+    "externalLink": "https://developer.mozilla.org/en/docs/Web/API/AudioContext",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~AudioContext",
     "access": null,
     "description": null,
     "builtinExternal": true

@@ -6,12 +6,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "es6-jspm-gulp-boilerplate/js/foo.js~foo",
-    "variable/index.html#static-variable-foo",
-    "<span>foo</span> <span class=\"search-result-import-path\">es6-jspm-gulp-boilerplate/js/foo.js</span>",
-    "variable"
-  ],
-  [
     "es6-jspm-gulp-boilerplate/js/app.js~hello",
     "variable/index.html#static-variable-hello",
     "<span>hello</span> <span class=\"search-result-import-path\">es6-jspm-gulp-boilerplate/js/app.js</span>",
@@ -297,6 +291,12 @@ window.esdocSearchIndex = [
     "builtinexternal/ecmascriptexternal.js~undefined",
     "external/index.html",
     "BuiltinExternal/ECMAScriptExternal.js~undefined",
+    "external"
+  ],
+  [
+    "builtinexternal/webapiexternal.js~audiocontext",
+    "external/index.html",
+    "BuiltinExternal/WebAPIExternal.js~AudioContext",
     "external"
   ],
   [
