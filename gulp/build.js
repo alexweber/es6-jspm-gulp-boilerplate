@@ -5,8 +5,8 @@ var gulp = require('gulp'),
   concat = require('gulp-concat'),
   exec = require('child_process').execSync,
   imagemin = require('gulp-imagemin'),
-  minifyCss = require('gulp-minify-css'),
-  minifyHtml = require('gulp-minify-html'),
+  cssNano = require('gulp-cssnano'),
+  htmlMin = require('gulp-htmlmin'),
   pngquant = require('imagemin-pngquant'),
   rename = require('gulp-rename'),
   replace = require('gulp-replace'),
@@ -25,7 +25,7 @@ gulp.task('buildsass', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('app.css'))
     .pipe(autoprefixer())
-    .pipe(minifyCss())
+    .pipe(cssNano())
     .pipe(rename({
       suffix: '.min'
     }))
@@ -51,7 +51,7 @@ gulp.task('buildhtml', function () {
     .pipe(replace('lib/system.js', 'app.min.js'))
     .pipe(replace('<script src="config.js"></script>', ''))
     .pipe(replace("<script>System.import('./js/app')</script>", ''))
-    .pipe(minifyHtml())
+    .pipe(htmlMin())
     .pipe(gulp.dest(global.paths.dist));
 });
 
