@@ -51,7 +51,7 @@ gulp.task('buildhtml', function () {
     .pipe(replace('lib/system.js', 'app.min.js'))
     .pipe(replace('<script src="config.js"></script>', ''))
     .pipe(replace("<script>System.import('./js/app')</script>", ''))
-    .pipe(htmlMin())
+    .pipe(htmlMin({collapseWhitespace: true}))
     .pipe(gulp.dest(global.paths.dist));
 });
 
