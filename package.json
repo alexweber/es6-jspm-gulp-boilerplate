@@ -24,7 +24,8 @@
     "start": "gulp",
     "buildjs": "jspm bundle-sfx js/app dist/app.min.js --minify --skip-source-maps",
     "jsdocs": "esdoc -c .esdoc.json",
-    "sassdocs": "sassdoc src/scss"
+    "sassdocs": "sassdoc src/scss",
+    "postinstall": "jspm install"
   },
   "keywords": [
     "es6",
