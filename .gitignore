@@ -7,3 +7,9 @@ src/lib/
 
 # Compiled css.
 src/css/
+
+# Generated docs.
+docs
+
+# Generated build.
+dist
