@@ -40,6 +40,10 @@ Run `npm run docs` to generate documentation for your JavaScript and SASS automa
 
 Run `gulp build` or `npm run build` to build the app for distribution in the `dist` folder.
 
+## Updating
+
+In the event of issues running `npm install` after updating to the latest version of the boilerplate, I recommend you `rm -rf node_modules`, re-run `npm install` and go grab some coffee while it runs :)
+
 ## Contributing
 
 If you like this/find it useful/find a bug please open an [issue](https://github.com/alexweber/es6-jspm-gulp-boilerplate/issues) and, better yet, submit a Pull Request! ☺ Any and all help appreciated, thanks!
