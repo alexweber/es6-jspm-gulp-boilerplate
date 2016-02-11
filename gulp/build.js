@@ -3,10 +3,10 @@
 var gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
   concat = require('gulp-concat'),
-  exec = require('child_process').execSync,
   imagemin = require('gulp-imagemin'),
   cssNano = require('gulp-cssnano'),
   htmlMin = require('gulp-htmlmin'),
+  jspm = require('gulp-jspm'),
   pngquant = require('imagemin-pngquant'),
   rename = require('gulp-rename'),
   replace = require('gulp-replace'),
@@ -34,14 +34,14 @@ gulp.task('buildsass', function () {
 
 // Build JS for distribution.
 gulp.task('buildjs', function () {
-  exec('npm run buildjs', function (err, stdout, stderr) {
-    if (err) {
-      throw err;
-    }
-    else {
-      console.log('Build complete!');
-    }
-  });
+  gulp.src('./src/js/app.js')
+    .pipe(jspm({
+      selfExecutingBundle: true,
+      minify: true,
+      skipSourceMaps: true
+    }))
+    .pipe(rename('app.min.js'))
+    .pipe(gulp.dest(global.paths.dist));
 });
 
 // Build HTML for distribution.
