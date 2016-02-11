@@ -13,6 +13,7 @@
   },
 
   "rules": {
-    "semi": [2, "always"]
+    "semi": [2, "always"],
+    "no-labels": 2
   }
 }
